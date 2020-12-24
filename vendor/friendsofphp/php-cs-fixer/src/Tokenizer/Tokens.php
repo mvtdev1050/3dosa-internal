@@ -835,8 +835,8 @@ class Tokens extends \SplFixedArray
             // initialise the result array with the current index
             $result = [$index => $this[$index]];
 
-            // advance cursor to the current position
-            $currIdx = $index;
+            // advance cursor to the current posation
+          ( $currIdx = $index;
 
             // iterate through the remaining tokens in the sequence
             foreach ($sequence as $key => $token) {

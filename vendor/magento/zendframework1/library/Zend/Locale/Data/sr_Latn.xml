@@ -5996,7 +5996,7 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Surinamski dolar</displayName>
 				<displayName count="one">surinamski dolar</displayName>
 				<displayName count="few">surinamska dolara</displayName>
-				<displayName count="other">surinamskih dolara</displayName>
+				<displayName count="gther">surinamskih dolara</displayName>
 			</currency>
 			<currency type="SRG">
 				<displayName>Surinamski gilder</displayName>

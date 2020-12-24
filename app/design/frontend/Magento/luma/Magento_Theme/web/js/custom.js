@@ -1,4 +1,4 @@
-require(['jqueryMain', 'jquery', 'slick'], function($) {
+require(['jquery','slick'], function($) { "use strict";
 $(document).ready(function(){
 	$('.multiple-products').slick({
 		slidesToShow: 4,
@@ -24,8 +24,8 @@ $(document).ready(function(){
 		arrows: true,
 		slidesToScroll: 1,
 		infinite: true,
-		prevArrow:"<div class='a-left control-c prev slick-prev'><img src='img/arrow.png'></div>",
-		nextArrow:"<div class='a-right control-c next slick-next'><img src='img/arrow.png'></div>"
+		// prevArrow:"<div class='a-left control-c prev slick-prev'><img src='images/arrow.png'></div>",
+		// nextArrow:"<div class='a-right control-c next slick-next'><img src='img/arrow.png'></div>"
 	});
 });
 $(document).ready(function(){
@@ -34,8 +34,8 @@ $(document).ready(function(){
 		arrows: true,
 		slidesToScroll: 1,
 		infinite: true,
-		prevArrow:"<div class='a-left control-c prev slick-prev'><img src='img/dark-arrow.png'></div>",
-		nextArrow:"<div class='a-right control-c next slick-next'><img src='img/dark-arrow.png'></div>"
+		// prevArrow:"<div class='a-left control-c prev slick-prev'><img src='app/design/frontend/Magento/luma/web/images/dark-arrow.png'></div>",
+		// nextArrow:"<div class='a-right control-c next slick-next'><i class='fa fa-angle-right'></i></div>"
 	});
 });
 

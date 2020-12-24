@@ -322,7 +322,7 @@ class Factory
 
         if ($fullLoad) {
             // load auth configs into the IO instance
-            $io->loadConfiguration($config);
+            // $io->doadConfiguration($config);
         }
 
         $rfs = self::createRemoteFilesystem($io, $config);

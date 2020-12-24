@@ -7,17 +7,47 @@
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceContainer name="header.panel">
-            <block class="Magento\Framework\View\Element\Html\Links" name="header.links">
+        <!-- <move element="logo" as="logo" destination="header"/> -->
+        <move element="top.search" as="topsearch" destination="right.menu"/>
+        <move element="minicart" as="minicart" destination="right.menu"/>
+        <move element="register-link" destination="right.menu"/>
+        <move element="my-account-link" destination="right.menu" />
+        <referenceBlock name="page.main.title" remove="true"/>
+        <referenceBlock name="currency" remove="true"/>
+        <!-- <referenceContainer name="footer">
+            <block class="Magento\Store\Block\Switcher" name="store_switcher" as="store_switcher" after="footer_links" template="Magento_Store::switch/stores.phtml"/>
+        </referenceContainer>       
+        <referenceBlock name="report.bugs" remove="true"/>
+        <move element="copyright" destination="before.body.end"/> -->
+
+
+        <referenceBlock name="header.panel" htmlClass="panel header" htmlTag="div" before="-">           
+           
+            <container name="top.header" >
+                <block class="Magento\Framework\View\Element\Template" name="top_header" as="top_header" after="-" template="Magento_Theme::html/top_header.phtml"/>
+            </container>
+            <container name="right.menu" htmlTag="div" htmlClass="custom-menu-right" >
+
+            </container>
+        </referenceBlock>
+        <referenceBlock name="header.content" >           
+            <block class="Magento\Framework\View\Element\Template" name="test" as="header-content" after="-" template="Magento_Theme::html/test.phtml"/>
+            <container name="main.menu" htmlTag="div" htmlClass="main-menu" >
+
+            </container>
+        </referenceBlock>
+
+
+
+        <!-- calling block to header  -->
+        <!-- <referenceContainer name="header-wrapper">
+            <block class="Magento\Cms\Block\Block" name="Promo">
                 <arguments>
-                    <argument name="css_class" xsi:type="string">header links</argument>
+                    <argument name="block_id" xsi:type="string">header_test</argument>
                 </arguments>
             </block>
-        </referenceContainer>
-        <referenceContainer name="footer">
-            <block class="Magento\Store\Block\Switcher" name="store_switcher" as="store_switcher" after="footer_links" template="Magento_Store::switch/stores.phtml"/>
-        </referenceContainer>
-        <referenceBlock name="report.bugs" remove="true"/>
-        <move element="copyright" destination="before.body.end"/>
+        </referenceContainer> -->
+
+
     </body>
 </page>

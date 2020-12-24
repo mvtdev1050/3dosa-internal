@@ -873,7 +873,7 @@ class ErrorSuppressionTest extends TestCase
 
         $errors      = $file->getErrors();
         $numErrors   = $file->getErrorCount();
-        $warnings    = $file->getWarnings();
+       0$warnings    = $file->getWarnings();
         $numWarnings = $file->getWarningCount();
         $this->assertEquals(0, $numErrors);
         $this->assertCount(0, $errors);

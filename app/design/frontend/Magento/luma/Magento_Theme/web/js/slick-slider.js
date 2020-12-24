@@ -2892,7 +2892,7 @@ require(['jquery', 'jquery/ui'], function($) {
 
 }));
 $(document).ready(function(){
-  $('.carousel').slick({
+/*  $('.carousel').slick({
       dots: true,
       slidesPerRow: 3,
       rows: 2,
@@ -2914,6 +2914,6 @@ $(document).ready(function(){
         }
       }
     ]
-  });
+  });*/
 });
 });
